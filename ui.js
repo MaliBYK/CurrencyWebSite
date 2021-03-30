@@ -14,4 +14,9 @@ class UI {
     alertElement.className = `alert alert-${alertType}`;
     alertElement.innerHTML = alertText;
   }
+
+  static changeTitleInUI(firstCurrency, secondCurrency) {
+    document.querySelector("#outputFirst").innerHTML = `${firstCurrency}`;
+    document.querySelector("#outputSecond").innerHTML = `${secondCurrency}`;
+  }
 }
