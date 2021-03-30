@@ -6,7 +6,7 @@ class UI {
       return;
     }
     if (!isNaN(amount)) this.changeAlert("Succesfully Exchanged !", "success");
-    outputElement.value = amount;
+    outputElement.value = amount.toFixed(2);
   }
   static changeAlert(alertText, alertType) {
     const alertElement = document.querySelector("#alertElement");
